@@ -6,7 +6,7 @@ export function Checkout () {
         <div>
             <div>
                 <div>
-                    <img src={pots}/>
+                    <img src={pots} alt="Pots" className="checkout-image"/>
                 </div>
             </div>
         </div>
