@@ -235,3 +235,6 @@ footer {
   .image.hovered {
     transform: scale(1.1); /* Adjust the scale factor for the desired zoom effect */
   }
+  .checkout-image {
+    
+  }
