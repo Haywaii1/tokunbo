@@ -1,0 +1,237 @@
+.nbar {
+     display: flex;
+     justify-content: space-evenly;
+     background-color: rgb(122, 128, 206);
+     padding: 30px;
+     list-style: none;
+    color: rgb(245, 247, 248);
+    max-width:100%;  
+}
+.active-link {
+    color: red;
+}
+.firstline {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.firstline3 {
+    display: grid;
+}
+.firstline1 {
+    display: grid;
+}
+.secondrow {
+    display: flex;
+    justify-content: center;
+    margin-top: 95px;
+    margin-left: 95px;
+    text-align: center; 
+}
+.secondrow1 {
+    display: grid;
+    border-radius: 15px;
+}
+.thirdrow {
+    display:flex ;
+}
+.thirdrow1 {
+    display:flex ;
+    margin: 20px;
+    justify-content: space-between;
+    text-align: center;
+}
+.fourthrow {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+.footer1 {
+    display: grid;
+    margin: 30px 150px 30px 0px;
+    color: white;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(71, 101, 233);
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.upfooter {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(65, 26, 156, 0.87);
+    color: white;
+    margin-top: 50px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 100%;
+
+}
+.upfooter1 {
+
+    display: flex;
+    margin: 0px 0px 0px 100px;
+}
+.upfooter2 {
+    margin: 35px 100px 0px 50px;
+}
+.upfooter3 {
+    margin: 0px  0px 0px 5px;
+}
+#signup {
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+        margin: 54px;      
+} 
+#signup1 {
+    width: 350px;
+    //background-color: rgb(227, 231, 235);
+    text-align: center;
+    padding: 60px;
+    box-shadow: 0px 1px 1px 0px;
+    border-radius: 15px;
+}
+.signupform {
+    margin: 10px;
+    justify-content: center;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 1px 1px 0px;
+}
+#signupbutton {
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: brown;
+    color: antiquewhite;
+}
+.loginform {
+    margin: 10px;
+    justify-content: center;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+#login {      
+    display: flex;
+        justify-content: center;
+        align-items: center ;
+        margin: 54px;
+}
+#login1 {
+    width: 350px;
+    background-color: rgb(227, 231, 235);
+    text-align: center;
+    padding: 50px;
+    margin: 100px;
+}
+#loginbutton {
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: brown;
+    color: antiquewhite;
+}
+.product-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 47.5px;
+}
+.products {
+    margin: 10px;
+    box-shadow: 0px 0.5px 1px 0px;
+    border-radius: 5px;
+
+}
+.product-image {
+    /* max-width: 30% */
+    margin: 20px;
+}
+.ps5image {
+    width: 450px;
+}
+.ps5details {
+    box-shadow: 1px 1px 4px rgba(97, 90, 90, 0.5);
+    border-radius: 15px;    
+}
+.ps5-details {
+    box-shadow: 1px 1px 4px rgba(97, 90, 90, 0.5); 
+    padding: 40px;   
+    border-radius: 15px;
+}
+.add-to-cart-button {
+    background-color: #f32121;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: #4d64e7da;
+    color: white;
+  }
+}
+.font-style {
+    color: rgb(248, 244, 244);
+     margin-right: 5px;
+     
+     &:hover {
+        color: white;
+     }
+}
+
+.ps5-details-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+    position: relative;
+}
+.ps5-details {
+    margin: ;
+}
+.ps5-pictures {
+    width: 350px;
+    margin: 20px;
+
+}
+.ps5-pictures-container {
+    display: flex;
+    justify-content: center;
+    /* margin: 60px 10px 10px 30px; */
+    
+    
+}
+.image-container {
+    position: relative;
+    width: 200px; /* Set the width of your image container */
+    height: 200px; /* Set the height of your image container */
+    overflow: hidden;
+  }
+  
+  .image {
+    width: 550px;
+    height: 400px;
+    transition: transform 0.3s;
+  }
+  
+  .image.hovered {
+    transform: scale(1.1); /* Adjust the scale factor for the desired zoom effect */
+  }
