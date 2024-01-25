@@ -21,6 +21,8 @@ import picture19 from "./image/ricecooker.jpg";
 import picture20 from "./image/generator.jpg";
 import picture21 from "./image/soundbar.jpg";
 import { Link } from "react-router-dom";
+import { Header } from "./components/header";
+import { Footer } from "./components/footer";
 
 let url =
   "https://img.freepik.com/free-photo/realtor-showing-property_1048-2936.jpg?w=740&t=st=1689365778~exp=1689366378~hmac=aaba792aa97f26619f0a893783b8e07c3ccff745a7cc3b25a8e75f1173fbea68";
@@ -28,6 +30,9 @@ let url =
 export function Home() {
   return (
     <>
+      <div>
+        <Header />
+      </div>
       <div className="firstline">
         <div className="firstline1">
           <a href="https://example.com">
@@ -383,6 +388,9 @@ export function Home() {
             </a>
           </div>
         </div>
+      </div>
+      <div>
+        <Footer />
       </div>
     </>
   );

@@ -8,10 +8,15 @@ import sandwich from "./image/sandwichmaker.jpg";
 import soundbar from "./image/soundbar.jpg";
 import sandwichgrill from "./image/sandwichgrill.jpg";
 import { Link } from "react-router-dom";
+import { Header } from "./components/header";
+import { Footer } from "./components/footer";
 
 export function Product() {
   return (
     <div>
+      <div>
+        <Header />
+      </div>
       <div className="product-container">
         <div className="products">
           <Link to="/iron">
@@ -97,6 +102,9 @@ export function Product() {
             />
           </a>
         </div>
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );

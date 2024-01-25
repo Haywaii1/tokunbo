@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Home } from "./component/Home";
 import { About } from "./component/About";
@@ -11,6 +11,7 @@ import { Categories } from "./component/Categories";
 import { Pages } from "./component/Pages";
 import { Login } from "./component/Login";
 import "./style.css";
+
 // src/index.js
 import "font-awesome/css/font-awesome.min.css";
 import { Iron } from "./component/iron";
@@ -24,6 +25,8 @@ import { Grill } from "./component/grill";
 import { Ps5details } from "./component/ps5details";
 import { Ps5Pictures } from "./component/ps5-pictures";
 import { Checkout } from "./component/checkout";
+import { Success } from "./component/success";
+
 
 
 
@@ -36,89 +39,7 @@ function App() {
   return (
     <div style={{ background: "aquablue", maxWidth: "100%" }}>
       <div></div>
-      <nav>
-        <ul className="nbar">
-          <li className="nav-link">
-            <NavLink to="/" style={{ textDecoration: "none", color: "white" }}>
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/shop"
-              style={{ textDecoration: "none", color: "white" }}
-            >
-              Shop
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/product"
-              style={{ textDecoration: "none", color: "white" }}
-            >
-              Buy
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="categories"
-              style={{ textDecoration: "none", color: "white" }}
-            >
-              Browse Categories
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/about"
-              style={{ textDecoration: "none", color: "white" }}
-            >
-              About
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/pages"
-              style={{ textDecoration: "none", color: "white" }}
-            >
-              Pages
-            </NavLink>
-          </li>
-          <div>
-            <div>
-              <input
-                type="text"
-                placeholder="Search for products"
-                style={{ height: "20px", width: "200px" }}
-              />
-              <i
-                className="fa fa-search"
-                aria-hidden="true"
-                style={{
-                  padding: "5px 20px 5px 20px",
-                  backgroundColor: "red",
-                  borderRadius: "10px",
-                }}
-              ></i>
-            </div>
-          </div>
-          <li>
-            <NavLink
-              to="/signup"
-              style={{ textDecoration: "none", color: "white" }}
-            >
-              Signup
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/login"
-              style={{ textDecoration: "none", color: "white" }}
-            >
-              Login
-            </NavLink>
-          </li>
-        </ul>
-      </nav>
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/shop" element={<Shop />} />
@@ -140,31 +61,9 @@ function App() {
         <Route path="/ps5details" element={<Ps5details />} />
         <Route path="/ps5-pictures" element={<Ps5Pictures />}/>
         <Route path="/checkout" element={<Checkout />}/>
+        <Route path="/success" element={<Success />}/>
       </Routes>
-      <div>
-        <footer>
-          <div className="footer1">
-            <h3>Shop</h3>
-            <a>Air Conditioner</a>
-            <a>Television</a>
-            <a>Washing Machine</a>
-            <a>Electric Cooker</a>
-            <a>Others</a>
-          </div>
-          <div className="footer1">
-            <h3>Browse</h3>
-            <a>LG</a>
-            <a>Hisense</a>
-            <a>Samsung</a>
-            <a>Maxi</a>
-            <a>Others</a>
-          </div>
-          <div className="footer1">
-            <h3>Location</h3>
-            <h4>46, Ifeloju, Agege, lagos, Nigeria.</h4>
-          </div>
-        </footer>
-      </div>
+      
     </div>
   );
 }
